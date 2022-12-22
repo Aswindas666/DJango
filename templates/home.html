@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home</title>
+    </head>
+    <body>
+        <h1> Home page</h1>
+        <h1>Django tutorial.<!-- {{data}} --></h1>
+        <h2>TEACHERS</h2>
+        {% for obj in data %}
+            <p>Name={{obj.name}}  	&nbsp; 	&nbsp; teacher id= {{obj.teacher_id}} </p>
+        {% endfor %}
+        <h2>STUDENTS</h2>
+        {% for obj in ob %}
+            <p>Name&nbsp;:&nbsp;{{obj.name}}&nbsp; 	&nbsp; Email&nbsp;:&nbsp;{{obj.email}} </p>
+
+        {% endfor %}
+        <p>GET <br>id = {{id.id}} is {{id}}&nbsp;Email_id&nbsp;:{{id.email}}</p>
+        <h2>filter method</h2><p>Name with 'kichu' data</p>
+        {% for obj in obj1 %}
+            <p>{{obj.name}}&nbsp; mail:{{obj.email}} &nbsp; Roll_no : {{obj.roll_no}}</p>
+        {% endfor %}
+    </body>
+</html>
